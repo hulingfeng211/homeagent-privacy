@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HomeAgent 隐私政策</title>
+<style>
+  body{max-width:760px;margin:0 auto;padding:28px 20px 60px;font:16px/1.75 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;color:#1f2937}
+  h1{font-size:24px;margin-bottom:4px}
+  h2{font-size:17px;margin-top:28px;border-left:4px solid #2563eb;padding-left:10px}
+  .meta{color:#6b7280;font-size:13px;margin-bottom:24px}
+  code{background:#f3f4f6;padding:1px 5px;border-radius:4px;font-size:14px}
+  ul{padding-left:22px}
+  footer{margin-top:40px;color:#9ca3af;font-size:12px}
+</style>
+</head>
+<body>
+<h1>HomeAgent 隐私政策</h1>
+<p class="meta">应用名称：HomeAgent（Android/鸿蒙应用包名：com.digtalhu.dshremote）<br>
+开发者：胡佐治（个人开发者）<br>
+生效日期：2026 年 10 月 24 日　最近更新：2026 年 10 月 24 日</p>
+
+<p>HomeAgent 是一款个人使用的客户端工具，用于在手机上访问用户自己部署的 DeepSeek Harness（以下简称 DSH）服务页面。本应用不提供账号体系，不运营服务器，也不收集、上传任何用户数据到开发者一侧。本政策说明本应用会接触到的信息及其处理方式。</p>
+
+<h2>一、我们收集哪些信息</h2>
+<p>本应用不收集可识别个人身份的信息，也不含广告、统计或埋点 SDK。以下信息仅在您的设备本地产生和使用：</p>
+<ul>
+  <li><strong>服务地址</strong>：您在首次启动时填写的 DSH 访问地址（例如 <code>http://192.168.1.10:19388/</code>），仅保存在本机应用数据中，用于下次直接连接。开发者无法获取该地址。</li>
+  <li><strong>网页内容</strong>：应用以系统 WebView 加载您指定的地址，页面内容属于您自己的服务，不经过开发者中转。</li>
+</ul>
+
+<h2>二、麦克风与语音输入</h2>
+<p>本应用提供语音输入功能，需要您主动授予麦克风权限，且仅在您点击「语音」按钮后使用：</p>
+<ul>
+  <li>您说话时的音频会实时送入<strong>华为终端语音识别服务（HarmonyOS Core Speech Kit）</strong>转换为文字；识别完成后文字被填入 DSH 的输入框，音频不会被本应用保存或上传到开发者服务器。</li>
+  <li>语音识别由华为系统能力提供，其数据处理适用华为相应的隐私条款；本应用不保留任何录音文件。</li>
+  <li>您可以随时在系统设置中关闭麦克风权限，届时语音输入不可用，其余功能不受影响。</li>
+</ul>
+
+<h2>三、权限说明</h2>
+<ul>
+  <li><code>ohos.permission.INTERNET</code>：访问您填写的 DSH 地址，加载页面。</li>
+  <li><code>ohos.permission.MICROPHONE</code>：仅在语音输入时使用，用于采集您的语音并转成文字。</li>
+  <li><code>ohos.permission.GET_NETWORK_INFO</code>：判断当前网络是否可用，用于连接失败时的提示。</li>
+</ul>
+
+<h2>四、第三方服务</h2>
+<p>本应用运行时会调用华为系统提供的语音识别能力（Core Speech Kit），用于把语音转为文字。除此之外不接入任何第三方 SDK，不与任何第三方共享您的信息。</p>
+
+<h2>五、信息存储与保留</h2>
+<p>本应用产生的数据（服务地址、页面缓存）均保存在您的设备本地，卸载应用即被清除。开发者不设服务器，因此不存在开发者侧的数据留存。</p>
+
+<h2>六、未成年人保护</h2>
+<p>本应用为面向成年人的个人效率工具，不面向未成年人，也不会有意收集未成年人的个人信息。</p>
+
+<h2>七、您的权利</h2>
+<p>您可以随时：修改或删除已填写的服务地址（应用内「换地址」）；撤销麦克风权限（系统设置）；清除应用数据或卸载应用。</p>
+
+<h2>八、政策更新</h2>
+<p>若本政策发生变更，我们会在本页面更新并标注更新日期。继续使用本应用即表示您接受更新后的政策。</p>
+
+<h2>九、联系我们</h2>
+<p>如对本政策有任何疑问，可通过应用市场该应用的开发者联系方式与我们联系，或发送邮件至：<a href="mailto:hulingfeng211@users.noreply.github.com">hulingfeng211@users.noreply.github.com</a></p>
+
+<footer>© 2026 HomeAgent · 本页面用于应用市场上架所需的隐私政策公示</footer>
+</body>
+</html>
